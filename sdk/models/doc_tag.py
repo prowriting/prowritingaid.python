@@ -42,7 +42,8 @@ class DocTag(object):
         'suggestions': 'list[str]',
         'is_sub_tag': 'bool',
         'help_id': 'str',
-        'id': 'str'
+        'id': 'str',
+        'invisible': 'bool'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class DocTag(object):
         'suggestions': 'suggestions',
         'is_sub_tag': 'isSubTag',
         'help_id': 'helpId',
-        'id': 'id'
+        'id': 'id',
+        'invisible': 'invisible'
     }
 
-    def __init__(self, start_pos=None, end_pos=None, report=None, urls=None, category=None, category_display_name=None, subcategory=None, hint=None, suggestions=None, is_sub_tag=None, help_id=None, id=None):
+    def __init__(self, start_pos=None, end_pos=None, report=None, urls=None, category=None, category_display_name=None, subcategory=None, hint=None, suggestions=None, is_sub_tag=None, help_id=None, id=None, invisible=None):
         """
         DocTag - a model defined in Swagger
         """
@@ -77,6 +79,7 @@ class DocTag(object):
         self._is_sub_tag = None
         self._help_id = None
         self._id = None
+        self._invisible = None
 
         self.start_pos = start_pos
         self.end_pos = end_pos
@@ -99,6 +102,8 @@ class DocTag(object):
           self.help_id = help_id
         if id is not None:
           self.id = id
+        if invisible is not None:
+          self.invisible = invisible
 
     @property
     def start_pos(self):
@@ -381,6 +386,29 @@ class DocTag(object):
         """
 
         self._id = id
+
+    @property
+    def invisible(self):
+        """
+        Gets the invisible of this DocTag.
+        Is tag invisible?
+
+        :return: The invisible of this DocTag.
+        :rtype: bool
+        """
+        return self._invisible
+
+    @invisible.setter
+    def invisible(self, invisible):
+        """
+        Sets the invisible of this DocTag.
+        Is tag invisible?
+
+        :param invisible: The invisible of this DocTag.
+        :type: bool
+        """
+
+        self._invisible = invisible
 
     def to_dict(self):
         """

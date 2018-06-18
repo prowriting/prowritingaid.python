@@ -9,6 +9,8 @@ Name | Type | Description | Notes
 **number_of_issues** | **int** | Number of found issues | [optional] 
 **report_description** | **str** | Short report description | [optional] 
 
+Represents report summary
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 
