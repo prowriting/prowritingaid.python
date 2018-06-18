@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 
 ## Available Reports
 Below is a list of the currently available reports from ProWritingAid. If you would like a different report, or require extra information, such as tokenization, sentence split, parts of speech, etc. then please [get in touch](https://prowritingaid.com/en/Home/Contact).
+
 Report Name | Status | Description
 ------------ | ------------- | -------------
 acronym | Live | Shows all the acronyms in your writing and highlights where they haven&#39;t been defined, or have been defined after the first occurrence, or have been defined multiple times.. |
