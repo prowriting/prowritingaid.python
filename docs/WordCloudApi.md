@@ -1,4 +1,4 @@
-# swagger_client.WordCloudApi
+# ProWritingAidSDK.WordCloudApi
 
 All URIs are relative to *https://localhost:5004*
 
@@ -17,12 +17,12 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import ProWritingAidSDK
+from ProWritingAidSDK.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WordCloudApi()
+api_instance = ProWritingAidSDK.WordCloudApi()
 task_id = 'task_id_example' # str | 
 
 try: 
@@ -62,13 +62,13 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import ProWritingAidSDK
+from ProWritingAidSDK.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WordCloudApi()
-requestp = swagger_client.WordCloudRequest() # WordCloudRequest | 
+api_instance = ProWritingAidSDK.WordCloudApi()
+requestp = ProWritingAidSDK.WordCloudRequest() # WordCloudRequest | 
 
 try: 
     api_response = api_instance.post(requestp)

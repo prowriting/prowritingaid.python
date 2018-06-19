@@ -1,4 +1,4 @@
-# swagger_client.ThesaurusApi
+# ProWritingAidSDK.ThesaurusApi
 
 All URIs are relative to *https://localhost:5004*
 
@@ -16,18 +16,18 @@ Returns the thesaurus entries for a specific word
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import ProWritingAidSDK
+from ProWritingAidSDK.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: licenseCode
-swagger_client.configuration.api_key['licenseCode'] = 'YOUR_API_KEY'
+ProWritingAidSDK.configuration.api_key['licenseCode'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['licenseCode'] = 'Bearer'
+# ProWritingAidSDK.configuration.api_key_prefix['licenseCode'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ThesaurusApi()
-request = swagger_client.ThesaurusRequest() # ThesaurusRequest | 
+api_instance = ProWritingAidSDK.ThesaurusApi()
+request = ProWritingAidSDK.ThesaurusRequest() # ThesaurusRequest | 
 
 try: 
     # Returns the thesaurus entries for a specific word

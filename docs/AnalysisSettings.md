@@ -17,6 +17,8 @@ Name | Type | Description | Notes
 **lowest_we_we_score** | **float** |  | [default to 0.6]
 **longest_average_paragraph_length** | **float** |  | [default to 6.0]
 
+
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

@@ -1,4 +1,4 @@
-# swagger_client.ContextualThesaurusApi
+# ProWritingAidSDK.ContextualThesaurusApi
 
 All URIs are relative to *https://localhost:5004*
 
@@ -17,17 +17,17 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import ProWritingAidSDK
+from ProWritingAidSDK.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: licenseCode
-swagger_client.configuration.api_key['licenseCode'] = 'YOUR_API_KEY'
+ProWritingAidSDK.configuration.api_key['licenseCode'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['licenseCode'] = 'Bearer'
+# ProWritingAidSDK.configuration.api_key_prefix['licenseCode'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ContextualThesaurusApi()
+api_instance = ProWritingAidSDK.ContextualThesaurusApi()
 task_id = 'task_id_example' # str | 
 
 try: 
@@ -67,18 +67,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import ProWritingAidSDK
+from ProWritingAidSDK.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: licenseCode
-swagger_client.configuration.api_key['licenseCode'] = 'YOUR_API_KEY'
+ProWritingAidSDK.configuration.api_key['licenseCode'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['licenseCode'] = 'Bearer'
+# ProWritingAidSDK.configuration.api_key_prefix['licenseCode'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ContextualThesaurusApi()
-requestp = swagger_client.ContextualThesaurusRequest() # ContextualThesaurusRequest | 
+api_instance = ProWritingAidSDK.ContextualThesaurusApi()
+requestp = ProWritingAidSDK.ContextualThesaurusRequest() # ContextualThesaurusRequest | 
 
 try: 
     api_response = api_instance.post(requestp)
