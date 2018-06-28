@@ -5,7 +5,7 @@ All URIs are relative to *https://api.prowritingaid.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get**](TextApi.md#get) | **GET** /api/async/text/result/{taskId} | Tries to get the result of a request using the task id of the request
-[**post**](TextApi.md#post) | **POST** /api/async/text | Analyses html and adds suggestions tags to it
+[**post**](TextApi.md#post) | **POST** /api/async/text | Analyses text and returns tags for it
 
 
 # **get**
@@ -84,7 +84,7 @@ api_instance = ProWritingAidSDK.TextApi()
 requestp = ProWritingAidSDK.TextAnalysisRequest() # TextAnalysisRequest | 
 
 try: 
-    # Analyses html and adds suggestions tags to it
+    # Analyses text and returns tags for it
     api_response = api_instance.post(requestp)
     pprint(api_response)
 except ApiException as e:

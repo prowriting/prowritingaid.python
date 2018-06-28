@@ -142,7 +142,7 @@ class TextApi(object):
 
     def post(self, requestp, **kwargs):
         """
-        Analyses html and adds suggestions tags to it
+        Analyses text and returns tags for it
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
         to be invoked when receiving the response.
@@ -167,7 +167,7 @@ class TextApi(object):
 
     def post_with_http_info(self, requestp, **kwargs):
         """
-        Analyses html and adds suggestions tags to it
+        Analyses text and returns tags for it
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
         to be invoked when receiving the response.
