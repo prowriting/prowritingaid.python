@@ -1,6 +1,6 @@
 # ProWritingAidSDK.ContextualThesaurusApi
 
-All URIs are relative to *https://localhost:5004*
+All URIs are relative to *https://api.prowritingaid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

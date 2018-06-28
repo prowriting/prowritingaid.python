@@ -1,6 +1,6 @@
 # ProWritingAidSDK.ThesaurusApi
 
-All URIs are relative to *https://localhost:5004*
+All URIs are relative to *https://api.prowritingaid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,6 +9,7 @@ Method | HTTP request | Description
 
 # **post**
 > ThesaurusResponse post(request)
+
 
 Returns the thesaurus entries for a specific word
 

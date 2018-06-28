@@ -73,7 +73,7 @@ except ApiException as e:
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://localhost:5004*
+All URIs are relative to *https://api.prowritingaid.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
