@@ -42,6 +42,7 @@ class WordCloudApi(object):
 
     def get(self, task_id, **kwargs):
         """
+        Tries to get the result of a request using the task id of the request
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
         to be invoked when receiving the response.
@@ -52,7 +53,7 @@ class WordCloudApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str task_id: (required)
+        :param str task_id:  (required)
         :return: AsyncResponseWordCloudResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -66,6 +67,7 @@ class WordCloudApi(object):
 
     def get_with_http_info(self, task_id, **kwargs):
         """
+        Tries to get the result of a request using the task id of the request
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
         to be invoked when receiving the response.
@@ -76,7 +78,7 @@ class WordCloudApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str task_id: (required)
+        :param str task_id:  (required)
         :return: AsyncResponseWordCloudResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -140,6 +142,7 @@ class WordCloudApi(object):
 
     def post(self, requestp, **kwargs):
         """
+        Analyses text and returns a word cloud (as an image)
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
         to be invoked when receiving the response.
@@ -150,7 +153,7 @@ class WordCloudApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param WordCloudRequest requestp: (required)
+        :param WordCloudRequest requestp:  (required)
         :return: AsyncResponseWordCloudResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -164,6 +167,7 @@ class WordCloudApi(object):
 
     def post_with_http_info(self, requestp, **kwargs):
         """
+        Analyses text and returns a word cloud (as an image)
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
         to be invoked when receiving the response.
@@ -174,7 +178,7 @@ class WordCloudApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param WordCloudRequest requestp: (required)
+        :param WordCloudRequest requestp:  (required)
         :return: AsyncResponseWordCloudResponse
                  If the method is called asynchronously,
                  returns the request thread.

@@ -42,6 +42,7 @@ class SummaryApi(object):
 
     def get(self, task_id, **kwargs):
         """
+        Tries to get the result of a request using the task id of the request
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
         to be invoked when receiving the response.
@@ -52,7 +53,7 @@ class SummaryApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str task_id: (required)
+        :param str task_id:  (required)
         :return: AsyncResponseSummaryAnalysisResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -66,6 +67,7 @@ class SummaryApi(object):
 
     def get_with_http_info(self, task_id, **kwargs):
         """
+        Tries to get the result of a request using the task id of the request
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
         to be invoked when receiving the response.
@@ -76,7 +78,7 @@ class SummaryApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str task_id: (required)
+        :param str task_id:  (required)
         :return: AsyncResponseSummaryAnalysisResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -140,6 +142,7 @@ class SummaryApi(object):
 
     def post(self, requestp, **kwargs):
         """
+        Gets the summary analysis of a document
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
         to be invoked when receiving the response.
@@ -150,7 +153,7 @@ class SummaryApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param SummaryAnalysisRequest requestp: (required)
+        :param SummaryAnalysisRequest requestp:  (required)
         :return: AsyncResponseSummaryAnalysisResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -164,6 +167,7 @@ class SummaryApi(object):
 
     def post_with_http_info(self, requestp, **kwargs):
         """
+        Gets the summary analysis of a document
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
         to be invoked when receiving the response.
@@ -174,7 +178,7 @@ class SummaryApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param SummaryAnalysisRequest requestp: (required)
+        :param SummaryAnalysisRequest requestp:  (required)
         :return: AsyncResponseSummaryAnalysisResponse
                  If the method is called asynchronously,
                  returns the request thread.

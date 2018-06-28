@@ -4,14 +4,15 @@ All URIs are relative to *https://localhost:5004*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get**](WordCloudApi.md#get) | **GET** /api/async/wordcloud/result/{taskId} | 
-[**post**](WordCloudApi.md#post) | **POST** /api/async/wordcloud | 
+[**get**](WordCloudApi.md#get) | **GET** /api/async/wordcloud/result/{taskId} | Tries to get the result of a request using the task id of the request
+[**post**](WordCloudApi.md#post) | **POST** /api/async/wordcloud | Analyses text and returns a word cloud (as an image)
 
 
 # **get**
 > AsyncResponseWordCloudResponse get(task_id)
 
 
+Tries to get the result of a request using the task id of the request
 
 ### Example 
 ```python
@@ -26,6 +27,7 @@ api_instance = ProWritingAidSDK.WordCloudApi()
 task_id = 'task_id_example' # str | 
 
 try: 
+    # Tries to get the result of a request using the task id of the request
     api_response = api_instance.get(task_id)
     pprint(api_response)
 except ApiException as e:
@@ -57,6 +59,7 @@ No authorization required
 > AsyncResponseWordCloudResponse post(requestp)
 
 
+Analyses text and returns a word cloud (as an image)
 
 ### Example 
 ```python
@@ -71,6 +74,7 @@ api_instance = ProWritingAidSDK.WordCloudApi()
 requestp = ProWritingAidSDK.WordCloudRequest() # WordCloudRequest | 
 
 try: 
+    # Analyses text and returns a word cloud (as an image)
     api_response = api_instance.post(requestp)
     pprint(api_response)
 except ApiException as e:

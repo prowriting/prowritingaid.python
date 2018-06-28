@@ -4,14 +4,15 @@ All URIs are relative to *https://localhost:5004*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get**](ContextualThesaurusApi.md#get) | **GET** /api/async/contextualthesaurus/result/{taskId} | 
-[**post**](ContextualThesaurusApi.md#post) | **POST** /api/async/contextualthesaurus | 
+[**get**](ContextualThesaurusApi.md#get) | **GET** /api/async/contextualthesaurus/result/{taskId} | Tries to get the result of a request using the task id of the request
+[**post**](ContextualThesaurusApi.md#post) | **POST** /api/async/contextualthesaurus | Analyses text and returns contextual thesaurus entries
 
 
 # **get**
 > AsyncResponseContextualThesaurusResponse get(task_id)
 
 
+Tries to get the result of a request using the task id of the request
 
 ### Example 
 ```python
@@ -31,6 +32,7 @@ api_instance = ProWritingAidSDK.ContextualThesaurusApi()
 task_id = 'task_id_example' # str | 
 
 try: 
+    # Tries to get the result of a request using the task id of the request
     api_response = api_instance.get(task_id)
     pprint(api_response)
 except ApiException as e:
@@ -62,6 +64,7 @@ Name | Type | Description  | Notes
 > AsyncResponseContextualThesaurusResponse post(requestp)
 
 
+Analyses text and returns contextual thesaurus entries
 
 ### Example 
 ```python
@@ -81,6 +84,7 @@ api_instance = ProWritingAidSDK.ContextualThesaurusApi()
 requestp = ProWritingAidSDK.ContextualThesaurusRequest() # ContextualThesaurusRequest | 
 
 try: 
+    # Analyses text and returns contextual thesaurus entries
     api_response = api_instance.post(requestp)
     pprint(api_response)
 except ApiException as e:

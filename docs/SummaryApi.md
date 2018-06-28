@@ -4,14 +4,15 @@ All URIs are relative to *https://localhost:5004*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get**](SummaryApi.md#get) | **GET** /api/async/summary/result/{taskId} | 
-[**post**](SummaryApi.md#post) | **POST** /api/async/summary | 
+[**get**](SummaryApi.md#get) | **GET** /api/async/summary/result/{taskId} | Tries to get the result of a request using the task id of the request
+[**post**](SummaryApi.md#post) | **POST** /api/async/summary | Gets the summary analysis of a document
 
 
 # **get**
 > AsyncResponseSummaryAnalysisResponse get(task_id)
 
 
+Tries to get the result of a request using the task id of the request
 
 ### Example 
 ```python
@@ -31,6 +32,7 @@ api_instance = ProWritingAidSDK.SummaryApi()
 task_id = 'task_id_example' # str | 
 
 try: 
+    # Tries to get the result of a request using the task id of the request
     api_response = api_instance.get(task_id)
     pprint(api_response)
 except ApiException as e:
@@ -62,6 +64,7 @@ Name | Type | Description  | Notes
 > AsyncResponseSummaryAnalysisResponse post(requestp)
 
 
+Gets the summary analysis of a document
 
 ### Example 
 ```python
@@ -81,6 +84,7 @@ api_instance = ProWritingAidSDK.SummaryApi()
 requestp = ProWritingAidSDK.SummaryAnalysisRequest() # SummaryAnalysisRequest | 
 
 try: 
+    # Gets the summary analysis of a document
     api_response = api_instance.post(requestp)
     pprint(api_response)
 except ApiException as e:
