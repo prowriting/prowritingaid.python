@@ -10,12 +10,12 @@ For more information, please visit [https://prowritingaid.com/en/App/API](https:
 
 ## Requirements.
 
-Python 2.7 and 3.4+
+Python 2.7 or 3.4+
 
 ## Installation & Usage
 ### pip install
 
-If the python package is hosted on Github, you can install directly from Github
+The python package is hosted on Github. You can install directly from Github.
 
 ```sh
 pip install git+https://github.com/prowriting/prowritingaid.python.git
@@ -53,10 +53,11 @@ from pprint import pprint
 
 configuration = ProWritingAidSDK.Configuration()
 configuration.host = 'https://api.prowritingaid.com'
+# To get an API code with 500 test credits go to https://prowritingaid.com/en/App/Api
 configuration.api_key['licenseCode'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
-api_instance = ProWritingAidSDK.ContextualThesaurusApi(ProWritingAidSDK.ApiClient('https://api.prowritingaid.com'))
+api_instance = ProWritingAidSDK.TextAnalysisRequest(ProWritingAidSDK.ApiClient('https://api.prowritingaid.com'))
 task_id = 'task_id_example'  # str |
 
 try:
@@ -70,6 +71,10 @@ try:
 except ApiException as e:
     print("Exception when calling ContextualThesaurusApi->get: %s\n" % e)
 ```
+
+## Examples
+
+- [Example of correcting a sentence using our grammar checking API](docs/grammar_checking.py). 
 
 ## Documentation for API Endpoints
 
