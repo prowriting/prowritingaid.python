@@ -6,7 +6,9 @@ from pprint import pprint
 
 configuration = ProWritingAidSDK.Configuration()
 configuration.host = 'https://api.prowritingaid.com'
-configuration.api_key['licenseCode'] = '225C39C4-BC23-43EC-ADC1-3B66E6229363'
+# To get an API code with 500 test credits go to https://prowritingaid.com/en/App/Api
+configuration.api_key['licenseCode'] = 'YOUR_API_KEY'
+
 
 # create an instance of the API class
 api_instance = ProWritingAidSDK.TextApi(ProWritingAidSDK.ApiClient('https://api.prowritingaid.com'))
