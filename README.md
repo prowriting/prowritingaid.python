@@ -53,19 +53,24 @@ from pprint import pprint
 
 configuration = ProWritingAidSDK.Configuration()
 configuration.host = 'https://api.prowritingaid.com'
-# To get an API code with 500 test credits go to https://prowritingaid.com/en/App/Api
 configuration.api_key['licenseCode'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
-api_instance = ProWritingAidSDK.TextAnalysisRequest(ProWritingAidSDK.ApiClient('https://api.prowritingaid.com'))
-task_id = 'task_id_example'  # str |
+api_instance = ProWritingAidSDK.TextApi(ProWritingAidSDK.ApiClient('https://api.prowritingaid.com'))
 
 try:
-    api_request = ProWritingAidSDK.ContextualThesaurusRequest("This is a sample text in English to test the sdk "
-                                                              "thesaurus. This is a second paragraph in the document."
-                                                              " This  is a new line.",
-                                                              17,
-                                                              20)
+    api_request = ProWritingAidSDK.TextAnalysisRequest("I place my cane firmly on the ground and, slowly, with its aid, "
+                                                       "I lower myself from the hammock. Now the rains have gone my joints "
+                                                       "don't hurt so badly. Today won't be too bad, I think. I'm prone to "
+                                                       "be over optimistic. Could this be my last day. At this time the jungle "
+                                                       "is strangely subdued. She poke around in the ashes. Every day the "
+                                                       "weariness is even worst than beofre. I don't know yett. \n"
+                                                       "Whne? What a weka statement. Jaroslav Drabny is a Czech football goalkeeper. "
+                                                       "Bhuvnehwar Kumar is a Czech football goalkeeper. I just saw Siyabonga Siyo. "
+                                                       "I just saw Siyabonga Seyo. I read this article on RaelSport.",
+                                                       ["grammar"],
+                                                       "General",
+                                                       "en")
     api_response = api_instance.post(api_request)
     pprint(api_response)
 except ApiException as e:
