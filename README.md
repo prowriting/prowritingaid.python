@@ -74,7 +74,7 @@ try:
     api_response = api_instance.post(api_request)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ContextualThesaurusApi->get: %s\n" % e)
+    print("Exception when calling API: %s\n" % e)
 ```
 
 ## Examples
