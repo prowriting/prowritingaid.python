@@ -79,7 +79,7 @@ except ApiException as e:
 
 ## Examples
 
-- [Example of correcting a sentence using our grammar checking API](docs/grammar_checking.py). 
+- [Example of correcting a sentence using our grammar checking API](examples/grammar_checking.py). 
 
 ## Documentation for API Endpoints
 
